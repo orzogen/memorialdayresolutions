@@ -1,0 +1,60 @@
+body .main-container .main header{
+	background: url('../img/header-biker.jpg');
+	background-size: cover;
+	background-position: center;
+	
+}
+
+body .main-container .main header .header-container{
+	position: absolute;
+	right: 8%;
+	top: 4%; 
+	
+	font-family: 'Rancho';
+	color: #F5F6CE;
+}
+
+body .main-container .main header .header-container h1{
+	font-size: 5em;
+	margin: .33em 0 .2em;
+	text-shadow: 3px 3px black;
+}
+
+body .main-container .main header .header-container h2{
+	margin: 0;
+	font-size: 2.5em;
+	text-align: right;
+	text-shadow: 3px 3px black;
+}
+
+body .main-container .main header .downward-arrow{
+	position: absolute;
+	bottom: 1%;
+	right: 48%;
+	
+	font-size: 3em;
+	color: #F5F6CE;
+	text-shadow: 0 0 10px black;
+	
+	-webkit-animation-duration: 1.5s;
+  -webkit-animation-name: bounce;
+  -webkit-animation-iteration-count: infinite;
+}
+
+body .main-container .main .content{
+	background: url('../img/header-beach.jpg');
+	background-size: cover;
+	background-position: left center;
+}
+
+@-webkit-keyframes bounce{
+	0%{
+		bottom: 1%;
+	}
+	50%{
+		bottom: 1.5%;
+	}
+	100%{
+		bottom: 1%;
+	}
+}
