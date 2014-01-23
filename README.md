@@ -1,4 +1,4 @@
-memorialdayresolutions
+Memorial Day Resolutions
 ======================
 
 Coming soon.
