@@ -8,18 +8,13 @@ $(document).ready(function(){
 	});
 	
   $(window).scroll(function(){
-//  if the page is not scrolled to all the way to the top, hide the arrow
-  	if(document.documentElement.scrollTop != 0){
+
+  	if(document.documentElement.scrollTop > 0){
   	  $(".downward-arrow").css({'visibility': 'hidden'}); 
   	}
-//  otherwise, show it
-  	if(document.documentElement.scrollTop == 0){
-  	  setTimeout(function(){
-//        this timeout prevents the arrow from being shown when the page briefly hits the 0 point when 'bouncing' upward on macs
-  	  		if(document.documentElement.scrollTop == 0){
-  	  			$(".downward-arrow").css({'visibility': 'visible'});
-  	  		}
-  	  	}, 50);
+
+  	if(document.documentElement.scrollTop <= 0){
+  	  $(".downward-arrow").css({'visibility': 'visible'});
   	}
   });
 });
